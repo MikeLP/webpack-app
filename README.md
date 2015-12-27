@@ -1,5 +1,5 @@
 # webpack-app
-Simple example boilerplate app
+Simple example boilerplate app - http://mikelp.github.io/webpack-app.
 
 ## (Pre)configuration
 ### This steps required before you can build project:
