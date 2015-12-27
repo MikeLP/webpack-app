@@ -37,7 +37,7 @@ module.exports = {
     extensions: ['', '.js', '.styl', '.css'],
     entry: {
         app: path.resolve(root, 'app/js/main.js'),
-        test: path.resolve(root, 'app/js/libs/test.js')
+        // test: path.resolve(root, 'app/js/libs/test.js')
     },
     output: {
         path: path.resolve(root, 'public'),

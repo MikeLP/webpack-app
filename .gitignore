@@ -24,5 +24,9 @@ node_modules
 # Bower
 bower_modules
 
-# Mac os hiiden file 
+# Mac os hiiden file
 .DS_Store
+
+# Application build output
+public/*.css
+public/*.js

@@ -5,8 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "http:prod:watch": "NODE_ENV=production node webpack.webserver.js --watch --progress",
-        "http:dev:watch": "NODE_ENV=development node webpack.webserver.js --watch --progress",
+        "http:dev:watch": "NODE_ENV=production npm run build:prod:watch &  webpack-dev-server",
+        "http:dev:watch": "NODE_ENV=development npm run build:dev:watch &  webpack-dev-server",
 
         "http:prod:win": "set NODE_ENV=production && node webpack.webserver.js --watch  --progress",
         "http:dev:win": "set NODE_ENV=development && node webpack.webserver.js --watch  --progress",
