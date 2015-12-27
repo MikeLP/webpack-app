@@ -1,0 +1,47 @@
+{
+    "name": "webpack-app",
+    "version": "1.0.0",
+    "description": "Simple example boilerplate app",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "http:prod:watch": "NODE_ENV=production node webpack.webserver.js --watch --progress",
+        "http:dev:watch": "NODE_ENV=development node webpack.webserver.js --watch --progress",
+        "build:prod": "NODE_ENV=production webpack --conf webpack.config.js --progress --colors",
+        "build:dev": "NODE_ENV=development webpack --conf webpack.config.js --progress --colors",
+        "build:prod:watch": "NODE_ENV=production webpack --conf webpack.config.js --progress --colors --watch",
+        "build:dev:watch": "NODE_ENV=development webpack --conf webpack.config.js --progress --colors --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MikeLP/webpack-app.git"
+    },
+    "keywords": [
+        "webpack",
+        "javascript",
+        "js",
+        "stylus",
+        "css",
+        "boilerplate",
+        "sample",
+        "app"
+    ],
+    "author": "Yan Zhabin",
+    "license": "MIT",
+    "devDependencies": {
+        "css-loader": "^0.23.1",
+        "extract-text-webpack-plugin": "^0.9.1",
+        "file-loader": "^0.8.5",
+        "style-loader": "^0.13.0",
+        "stylus-loader": "^1.4.2",
+        "webpack": "^1.12.9",
+        "webpack-dev-server": "^1.14.0"
+    },
+    "dependencies": {
+        "normalize.css": "^3.0.3"
+    },
+    "bugs": {
+        "url": "https://github.com/MikeLP/webpack-app/issues"
+    },
+    "homepage": "https://github.com/MikeLP/webpack-app#readme"
+}

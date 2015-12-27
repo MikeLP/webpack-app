@@ -1,0 +1,24 @@
+{
+    "name": "simpleapp",
+    "description": "Boilerplate app",
+    "main": "index.js",
+    "authors": [
+        "Yan Zhabin"
+    ],
+    "license": "MIT",
+    "moduleType": [
+        "amd",
+        "es6",
+        "globals",
+        "node"
+    ],
+    "homepage": "",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
