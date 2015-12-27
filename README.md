@@ -3,8 +3,8 @@ Simple example boilerplate app - http://mikelp.github.io/webpack-app.
 
 ## (Pre)configuration
 ### This steps required before you can build project:
-- Install last version of [node.js] for your platform (for Mac OS use brew - brew install nodejs)
-- Install last version of [git] for your platform (for Mac OS use brew - brew install git)
+- Install last version of [node.js] for your platform (for Mac OS use brew - $`brew install nodejs`)
+- Install last version of [git] for your platform (for Mac OS use brew - $`brew install git`)
 - Checkout last version from [repository]
 - Go to client root folder that include _(./public, ./app, ./doc)_ folders
 - Please type in console/terminal command `npm install`
