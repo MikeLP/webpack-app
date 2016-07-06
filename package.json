@@ -3,6 +3,11 @@
     "version": "1.0.0",
     "description": "Simple example boilerplate app",
     "main": "index.js",
+    "main": "./src/index.js",
+    "os": ["darwin", "linux", "win32"],
+    "engines": {
+        "node": ">=6.0.0"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "http:dev:watch": "NODE_ENV=production npm run build:prod:watch &  webpack-dev-server",
@@ -11,17 +16,17 @@
         "http:prod:win": "set NODE_ENV=production && node webpack.webserver.js --watch  --progress",
         "http:dev:win": "set NODE_ENV=development && node webpack.webserver.js --watch  --progress",
 
-        "build:prod": "NODE_ENV=production webpack --conf webpack.config.js --progress --colors",
-        "build:dev": "NODE_ENV=development webpack --conf webpack.config.js --progress --colors",
+        "build:prod": "NODE_ENV=production ./node_modules/.bin/webpack --conf webpack.config.js --progress --colors",
+        "build:dev": "NODE_ENV=development ./node_modules/.bin/webpack --conf webpack.config.js --progress --colors",
 
-        "build:prod:win": "set NODE_ENV=production webpack --conf webpack.config.js --progress --colors",
-        "build:dev:win": "set NODE_ENV=development webpack --conf webpack.config.js --progress --colors",
+        "build:prod:win": "set NODE_ENV=production ./node_modules/.bin/webpack --conf webpack.config.js --progress --colors",
+        "build:dev:win": "set NODE_ENV=development ./node_modules/.bin/webpack --conf webpack.config.js --progress --colors",
 
-        "build:prod:watch": "NODE_ENV=production webpack --conf webpack.config.js --progress --colors --watch",
-        "build:dev:watch": "NODE_ENV=development webpack --conf webpack.config.js --progress --colors --watch",
+        "build:prod:watch": "NODE_ENV=production ./node_modules/.bin/webpack --conf webpack.config.js --progress --colors --watch",
+        "build:dev:watch": "NODE_ENV=development ./node_modules/.bin/webpack --conf webpack.config.js --progress --colors --watch",
 
-        "build:prod:watch:win": "set NODE_ENV=production webpack --conf webpack.config.js --progress --colors --watch",
-        "build:dev:watch:win": "set NODE_ENV=development webpack --conf webpack.config.js --progress --colors --watch"
+        "build:prod:watch:win": "set NODE_ENV=production ./node_modules/.bin/webpack --conf webpack.config.js --progress --colors --watch",
+        "build:dev:watch:win": "set NODE_ENV=development ./node_modules/.bin/webpack --conf webpack.config.js --progress --colors --watch"
     },
     "repository": {
         "type": "git",
@@ -41,15 +46,15 @@
     "license": "MIT",
     "devDependencies": {
         "css-loader": "^0.23.1",
-        "extract-text-webpack-plugin": "^0.9.1",
-        "file-loader": "^0.8.5",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "file-loader": "^0.9.0",
         "style-loader": "^0.13.0",
-        "stylus-loader": "^1.4.2",
+        "stylus-loader": "^2.1.1",
         "webpack": "^1.12.9",
         "webpack-dev-server": "^1.14.0"
     },
     "dependencies": {
-        "normalize.css": "^3.0.3"
+        "normalize.css": "^4.2.0"
     },
     "bugs": {
         "url": "https://github.com/MikeLP/webpack-app/issues"
