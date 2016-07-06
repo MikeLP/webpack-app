@@ -1,8 +1,3 @@
-// let path = require('path'),     webpack = require('webpack'),     extractTextPlugin =
-// require('extract-text-webpack-plugin'),     root = __dirname,     config = {},     extractTextPlugin = new
-// extractTextPlugin('assets/style.css'),     env = process.env.NODE_ENV         ? process.env.NODE_ENV.trim()         :
-// 'production';
-
 let path = require('path');
 
 let webpack = require('webpack'),
